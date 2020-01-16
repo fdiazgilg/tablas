@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block title%} Tabla del {{num}} {% endblock %}
+
+{% block content %}
+    <h2>Tabla de multiplicar número {{num}}</h2>
+        {% for item in tabla %}
+            <p>{{item}}</p>
+        {% endfor %}
+{% endblock %}
